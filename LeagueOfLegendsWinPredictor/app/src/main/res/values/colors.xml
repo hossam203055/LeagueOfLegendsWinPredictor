@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="blueTeam">#0027FD</color>
+    <color name="redTeam">#D11103</color>
+    <color name="blueTeamDialog">#03A9F4</color>
+    <color name="redTeamDialog">#F44336</color>
+</resources>

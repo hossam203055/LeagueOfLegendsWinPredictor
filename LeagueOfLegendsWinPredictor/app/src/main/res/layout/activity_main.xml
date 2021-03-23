@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/project_yi"
+    android:backgroundTint="#DCD6D6"
+    android:backgroundTintMode="screen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Type details of game to predict win"
+        android:textSize="30sp"
+        android:textColor="#FFC107"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:background="#134B68"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/marginForLeft"
+            android:layout_marginTop="@dimen/marginForBottom"
+            android:layout_marginBottom="@dimen/marginForBottom"
+            android:layout_marginRight="@dimen/marginForLeft"
+            >
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Blood"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blueTeam"
+                    android:id="@+id/blueFirstBloodRadioButton"
+                    android:layout_weight="1"
+                    android:textColor="@color/blueTeam"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/redTeam"
+                    android:id="@+id/redFirstBloodRadioButton"
+                    android:layout_weight="1"
+                    android:textColor="@color/redTeam"
+                    />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Tower"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blueTeam"
+                    android:id="@+id/blueFirstTowerRadioButton"
+                    android:layout_weight="1"
+                    android:textColor="@color/blueTeam"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/redTeam"
+                    android:id="@+id/redFirstTowerRadioButton"
+                    android:layout_weight="1"
+                    android:textColor="@color/redTeam"
+                    />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Baron"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blueTeam"
+                    android:id="@+id/blueFirstBaronRadioButton"
+                    android:layout_weight="1"
+                    android:textColor="@color/blueTeam"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/redTeam"
+                    android:id="@+id/redFirstBaronRadioButton"
+                    android:layout_weight="1"
+                    android:textColor="@color/redTeam"
+                    />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Dragon"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blueTeam"
+                    android:id="@+id/blueFirstDragonRadioButton"
+                    android:layout_weight="1"
+                    android:textColor="@color/blueTeam"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/redTeam"
+                    android:id="@+id/redFirstDragonRadioButton"
+                    android:layout_weight="1"
+                    android:textColor="@color/redTeam"
+                    />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Inhibitor"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blueTeam"
+                    android:id="@+id/blueFirstInhibitorRadioButton"
+                    android:layout_weight="1"
+                    android:textColor="@color/blueTeam"
+                    />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/redTeam"
+                    android:id="@+id/redFirstInhibitorRadioButton"
+                    android:layout_weight="1"
+                    android:textColor="@color/redTeam"
+                    />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Blue Team Details:"
+                android:textSize="30sp"
+                android:textColor="#FFC107"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:background="#134B68"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blue Dragon Kills"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    />
+
+                <EditText
+                    android:id="@+id/blueDragonKillsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blue Baron Kills"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    />
+
+                <EditText
+                    android:id="@+id/blueBaronKillsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blue Tower Kills"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    />
+
+                <EditText
+                    android:id="@+id/blueTowerKillsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blue Inhibitor Kills"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    />
+
+                <EditText
+                    android:id="@+id/blueInhibitorKillsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blue Ward Placed"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    />
+
+                <EditText
+                    android:id="@+id/blueWardPlacedEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blue Ward Kills"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    />
+
+                <EditText
+                    android:id="@+id/blueWardKillsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blue KDA"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/blueKillsEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginForLeft"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="Kills"
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/blueDeathEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginForLeft"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="Death"
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/blueAssistEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginForLeft"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="Assist"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blue Champions Damage Dealt"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/blueChampionDamageDealtEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blue Total Gold"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/blueTotalGoldDealtEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blue Total Minion Kills"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/blueTotalMinionKillsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blue Level of 5 Summoners"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="2"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/blueLevelS1EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginForLeft"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="S1"
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/blueLevelS2EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginForLeft"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="S2"
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/blueLevelS3EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginForLeft"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="S3"
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/blueLevelS4EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginForLeft"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="S4"
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/blueLevelS5EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginForLeft"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="S5"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blue Jungle Minion Kills"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/blueJungleMinionKillsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blue Killing Spree"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/blueKillingSpreeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:hint="of the highest champ"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blue Total Heal"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/blueTotalHealEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blue Object Damage Dealt"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/blueObjectDamageDealtEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Red Team Details:"
+                android:textSize="30sp"
+                android:textColor="#FFC107"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:background="#134B68"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Red Dragon Kills"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    />
+
+                <EditText
+                    android:id="@+id/redDragonKillsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Red Baron Kills"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    />
+
+                <EditText
+                    android:id="@+id/redBaronKillsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Red Tower Kills"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    />
+
+                <EditText
+                    android:id="@+id/redTowerKillsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Red Inhibitor Kills"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    />
+
+                <EditText
+                    android:id="@+id/redInhibitorKillsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Red Ward Placed"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    />
+
+                <EditText
+                    android:id="@+id/redWardPlacedEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Red Ward Kills"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    />
+
+                <EditText
+                    android:id="@+id/redWardKillsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Red KDA"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/redKillsEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginForLeft"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="Kills"
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/redDeathEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginForLeft"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="Death"
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/redAssistEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginForLeft"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="Assist"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Red Champions Damage Dealt"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/redChampionDamageDealtEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Red Total Gold"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/redTotalGoldDealtEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Red Total Minion Kills"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/redTotalMinionKillsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Red Level of 5 Summoners"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="2"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/redLevelS1EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginForLeft"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="S1"
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/redLevelS2EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginForLeft"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="S2"
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/redLevelS3EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginForLeft"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="S3"
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/redLevelS4EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginForLeft"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="S4"
+                        android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/redLevelS5EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginForLeft"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:hint="S5"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Red Jungle Minion Kills"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/redJungleMinionKillsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Red Killing Spree"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/redKillingSpreeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:hint="of the highest champ"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Red Total Heal"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/redTotalHealEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Red Object Damage Dealt"
+                    style="@style/textStyle"
+                    android:textSize="@dimen/textSize"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/marginForLeft"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/redObjectDamageDealtEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginForLeft"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/predictButton"
+                android:text="Predict"
+                android:background="#FFC107"
+                android:layout_marginTop="@dimen/marginForBottom"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:text="Hello World!"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

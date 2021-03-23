@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">League Of Legends Win Predictor</string>
+    <string name="blueTeam">Blue Team</string>
+    <string name="redTeam">Red Team</string>
+</resources>
